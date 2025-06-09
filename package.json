@@ -1,0 +1,20 @@
+{
+  "name": "personnel-selection-mvp",
+  "version": "1.0.0",
+  "description": "Sistema Tomográfico de Selección de Personal - MVP",
+  "main": "backend/src/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:dev": "cd frontend && npm run dev",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "cd backend && npm test",
+    "lint": "cd backend && npm run lint && cd ../frontend && npm run lint"
+  },
+  "keywords": ["hr", "selection", "ai", "assessment"],
+  "author": "Your Company",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
